@@ -64,7 +64,7 @@ const DishItem = ({dishDetails}) => {
         {quantity > 0 && (
           <button
             type="button"
-            className="btn btn-outline-primary mt-3"
+            className="add-bot btn btn-outline-primary mt-3"
             onClick={onAddItemToCart}
           >
             ADD TO CART

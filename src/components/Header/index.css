@@ -1,5 +1,20 @@
 .nav-header {
   box-shadow: 0px 10px 10px -15px #111;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+.or-para {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+.log-bot {
+  border: red 3px solid;
+  color: red;
+  padding: 20ox;
+  margin-right: 20px;
 }
 
 .nav-header a {
@@ -25,6 +40,7 @@
   font-size: 18px;
   color: #585555;
   text-decoration: none;
+  margin-right: 20px;
 }
 
 .cart-icon-link {
@@ -45,6 +61,9 @@
 
 .cart-count-badge {
   background-color: #ff6347;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: -13px;
   right: -8px;

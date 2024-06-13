@@ -20,7 +20,7 @@ const Login = props => {
 
   const onSuccessfulLogin = jwtToken => {
     const {history} = props
-    Cookies.set('jwt_token', jwtToken, {expires: 1})
+    Cookies.set('jwt_token', jwtToken, {expires: 10})
     history.replace('/')
   }
 

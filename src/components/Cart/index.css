@@ -1,9 +1,20 @@
 .cart-page-container {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.empt {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cart-body-container {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .empty-view-image {
@@ -19,6 +30,9 @@
 }
 
 .cart-items-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 25px 0;
   width: 80%;
   margin: 0 auto;
@@ -30,6 +44,12 @@
   font-weight: 500;
 }
 
+.un-or {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .remove-all-btn {
   font-size: 14px;
   font-family: 'Roboto';
@@ -38,4 +58,5 @@
   background-color: transparent;
   border: none;
   outline: none;
+  color: aqua;
 }
