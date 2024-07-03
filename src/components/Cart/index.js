@@ -5,13 +5,15 @@ import CartItem from '../CartItem'
 
 import CartContext from '../../context/CartContext'
 
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 import './index.css'
 
 const Cart = () => {
   const {cartList, removeAllCartItems} = useContext(CartContext)
 
   const renderEmptyView = () => (
-    <div className="empt m-auto d-flex flex-column align-items-center">
+    <div className="m-auto d-flex flex-column align-items-center">
       <img
         src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-empty-cart-img.png"
         alt="empty view"
@@ -33,7 +35,7 @@ const Cart = () => {
           Remove All
         </button>
       </div>
-      <ul className="ps-0 d-flex flex-column align-items-center un-or">
+      <ul className="ps-0 d-flex flex-column align-items-center">
         {cartList.map(dish => (
           <CartItem key={dish.dishId} cartItemDetails={dish} />
         ))}

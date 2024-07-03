@@ -1,21 +1,12 @@
 .dish-item-container {
-  display: flex;
-  margin-bottom: 20px;
-  padding: 20px;
   border: 1px solid gray;
   border-radius: 12px;
   justify-content: space-between;
 }
-.add-bot {
-  padding: 10px;
-  border: solid green 5px;
-  color: #00923f;
-  margin-top: 20px;
-}
+
 .veg-border {
   border: 1px solid #00923f;
   align-self: flex-start;
-  margin-right: 20px;
 }
 
 .non-veg-border {
@@ -64,9 +55,6 @@
 }
 
 .controller-container {
-  display: flex;
-  align-items: center;
-  background-color: green;
   width: fit-content;
   min-width: 150px;
   justify-content: space-between;
@@ -111,7 +99,6 @@
   font-family: 'Roboto';
   font-size: 18px;
   align-self: center;
-  color: #92282a;
 }
 
 .dish-image {

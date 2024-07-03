@@ -1,7 +1,9 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import {useState} from 'react'
 import Cookies from 'js-cookie'
 import {Redirect} from 'react-router-dom'
 
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css'
 
 const Login = props => {
@@ -20,7 +22,7 @@ const Login = props => {
 
   const onSuccessfulLogin = jwtToken => {
     const {history} = props
-    Cookies.set('jwt_token', jwtToken, {expires: 10})
+    Cookies.set('jwt_token', jwtToken, {expires: 1})
     history.replace('/')
   }
 

@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import Cookies from 'js-cookie'
 import {Redirect, Route} from 'react-router-dom'
 

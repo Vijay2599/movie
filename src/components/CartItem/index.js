@@ -2,7 +2,7 @@ import {useContext} from 'react'
 import {FaRegTrashAlt} from 'react-icons/fa'
 
 import CartContext from '../../context/CartContext'
-
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css'
 
 const CartItem = ({cartItemDetails}) => {

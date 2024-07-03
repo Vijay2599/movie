@@ -1,7 +1,7 @@
 import {useState, useContext} from 'react'
 
 import CartContext from '../../context/CartContext'
-
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css'
 
 const DishItem = ({dishDetails}) => {
@@ -64,7 +64,7 @@ const DishItem = ({dishDetails}) => {
         {quantity > 0 && (
           <button
             type="button"
-            className="add-bot btn btn-outline-primary mt-3"
+            className="btn btn-outline-primary mt-3"
             onClick={onAddItemToCart}
           >
             ADD TO CART

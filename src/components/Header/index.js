@@ -4,7 +4,7 @@ import {AiOutlineShoppingCart} from 'react-icons/ai'
 import Cookies from 'js-cookie'
 
 import CartContext from '../../context/CartContext'
-
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css'
 
 const Header = props => {
@@ -17,16 +17,16 @@ const Header = props => {
   }
 
   const renderCartIcon = () => (
-    <Link to="/cart">
-      <div className="cart-icon-link">
+    <div className="cart-icon-link">
+      <Link to="/cart">
         <button type="button" className="cart-icon-button" data-testid="cart">
           <AiOutlineShoppingCart className="cart-icon" />
         </button>
-        <div className="cart-count-badge d-flex justify-content-center align-items-center">
-          <p className="m-0 cart-count">{cartList.length}</p>
-        </div>
+      </Link>
+      <div className="cart-count-badge d-flex justify-content-center align-items-center">
+        <p className="m-0 cart-count">{cartList.length}</p>
       </div>
-    </Link>
+    </div>
   )
 
   return (
@@ -34,13 +34,13 @@ const Header = props => {
       <Link to="/">
         <h1 className="m-0 logo-heading">{restaurantName}</h1>
       </Link>
-      <div className="or-para d-flex flex-row align-items-center ms-auto">
+      <div className="d-flex flex-row align-items-center ms-auto">
         <p className="mt-0 mb-0 me-2 d-none d-sm-block my-orders-text">
           My Orders
         </p>
         <button
           type="button"
-          className="log-bot btn btn-outline-danger ms-2 me-2 btn-sm"
+          className="btn btn-outline-danger ms-2 me-2 btn-sm"
           onClick={onLogout}
         >
           Logout
